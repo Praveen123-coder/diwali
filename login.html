@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(deepa.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+        .parent-login {
+            background-color: blanchedalmond;
+            width: 30%;
+            margin-top: 4%;
+            border-radius: 15px;
+            padding: 2%;
+
+        }
+
+        .form-field label {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .form-login {
+            margin: 10px;
+        }
+
+        .form-login input,
+        .form-btn {
+            padding: 20px;
+            width: 30%;
+            margin: 10px 0px 10px 0px;
+        }
+        @media(max-width:430px){
+            .container{
+                flex-direction: column;
+            }                                                           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="parent-login" action="">
+            <div class="form-login">
+                <label class="form-field">Username :<input type="text" placeholder="Username" required></label>
+            </div>
+            <div class="form-login">
+                <label class="form-field"> password :<input type="password" placeholder="password" required></label>
+            </div>
+            <button class="form-btn">LOGIN</button>
+        </form>
+    </div>
+</body>
+<script>
+  function launchConfetti() {
+  const duration = 7 * 1000; // 10 seconds
+  const end = Date.now() + duration;
+  const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+  (function frame() {
+      confetti({
+          particleCount: 6, // Reduced number of particles
+          startVelocity: 80,
+          spread: 450,
+          ticks: 190,
+          origin: { x: 0.5, y: 0.5 }, // Start from top center
+          colors: colors,
+      });
+      if (Date.now() < end) {
+          requestAnimationFrame(frame);
+      }
+  }());
+}
+window.onload = function() {
+  launchConfetti();
+}
+</script>
+<p>
+    Already have an account
+    <a href="diwali.html">GO TO DIWALI</a>
+
+</html>

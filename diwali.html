@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <h1 aligen ="center">HAPPY DIWALI</h1>
+    <p>
+        Diwali, also known as the Festival of Lights, is one of the most important and widely celebrated festivals in India. It usually takes place in late October or early November, aligning with the Hindu lunar calendar. The word "Diwali" comes from the Sanskrit term "Deepavali," which means "row of lights." This festival symbolizes the victory of light over darkness, knowledge over ignorance, and good over evil. It is a joyous occasion that transcends religious boundaries and brings people from different backgrounds together.
+
+The origin of Diwali can be traced to several Hindu legends. One of the most popular stories is from the epic Ramayana, where Lord Rama, his wife Sita, and brother Lakshmana return to their kingdom, Ayodhya, after 14 years of exile. Their return is celebrated by the people lighting oil lamps, known as diyas, to welcome them home. In the Mahabharata, it marks the return of the Pandavas after 12 years of exile. For some, Diwali commemorates the victory of Lord Krishna over the demon king Narakasura. In other regions, it honors Goddess Lakshmi, the deity of wealth and prosperity, and celebrates her marriage to Lord Vishnu.
+
+Diwali is celebrated over five days, each with its own significance. The first day, Dhanteras, marks the beginning of the festival, where people clean their homes and buy gold, silver, or kitchen utensils, symbolizing good fortune. The second day, Naraka Chaturdashi, or Choti Diwali, represents the defeat of Narakasura by Lord Krishna, symbolizing the eradication of evil. The main day of Diwali, also known as Lakshmi Puja, involves offering prayers to Goddess Lakshmi and lighting lamps and candles throughout homes. The fourth day, Govardhan Puja or Annakut, celebrates Lord Krishna lifting Govardhan Hill to protect villagers. The final day, Bhai Dooj, is dedicated to the bond between siblings, where sisters pray for their brothers' prosperity.
+
+Diwali is not just a Hindu festival; it is also celebrated by Jains, Sikhs, and Buddhists, each adding their unique significance. For Jains, Diwali marks the day when Lord Mahavira, the last Tirthankara, attained nirvana. In Sikhism, Diwali coincides with the release of Guru Hargobind Ji from imprisonment, making it an occasion of freedom and spiritual enlightenment. In Buddhism, especially among Newar Buddhists, Diwali represents gratitude toward deities and ancestors.
+
+During Diwali, people decorate their homes with rangoli, intricate patterns made with colored powders, rice, and flowers at the entrance of their houses to welcome guests. Diyas and candles are lit in every room and window, symbolizing the removal of darkness. Fireworks play a significant role in the festivities, as they are believed to ward off evil spirits and bring joy to everyone. Many families also exchange sweets, gifts, and festive foods with friends and relatives, strengthening bonds of love and friendship.
+
+Sweets such as laddus, barfis, and jalebis are an essential part of Diwali, as they symbolize sharing happiness. Savory treats like samosas, chaklis, and other regional delicacies are also enjoyed. Diwali shopping sprees for clothes, jewelry, and home decorations contribute significantly to the festive economy, making it a peak time for businesses across India.
+
+The festival promotes charity, as many people choose to donate clothes, food, and other essentials to those in need. Additionally, Diwali serves as an opportunity to introspect and resolve to let go of negative feelings. Many also choose this time to meditate, pray, and reflect on the year gone by, setting positive intentions for the year ahead.
+
+In recent years, there has been a growing emphasis on celebrating an eco-friendly Diwali. Many are opting for clay diyas instead of candles to reduce waste, choosing organic rangoli colors, and minimizing firecracker use to curb air pollution. Schools, organizations, and families often promote a "green Diwali," focusing on sustainability and a cleaner environment.
+
+Diwali's charm lies in its ability to bring families and communities together. It is a time of shared joy, unity, and cultural celebration that transcends age, caste, and creed. The festival’s lights remind everyone to embrace hope, compassion, and the virtues that bring people closer.
+
+
+    </p>
+</body>
+<script>
+  function launchConfetti() {
+  const duration = 7 * 1000; // 10 seconds
+  const end = Date.now() + duration;
+  const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+  (function frame() {
+      confetti({
+          particleCount: 6, // Reduced number of particles
+          startVelocity: 80,
+          spread: 450,
+          ticks: 190,
+          origin: { x: 0.5, y: 0.5 }, // Start from top center
+          colors: colors,
+      });
+      if (Date.now() < end) {
+          requestAnimationFrame(frame);
+      }
+  }());
+}
+window.onload = function() {
+  launchConfetti();
+}
+</script>
+</html>

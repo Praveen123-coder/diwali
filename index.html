@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <style>
+        .form{
+    color: yellowgreen;
+}
+
+.parent-container{
+    background-image: url(diwaliimg.jpg);
+    min-height: 200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    margin-top: 2%;
+}
+.form-field{
+    margin: 10px;
+}
+.form-field input.form-button{
+    padding: 10px;
+    width: 200px;
+}
+    </style>
+</head>
+<body>
+    <form class="parent-container" action="login.html" >
+        <div  class="form">
+            <h1>REGISTER FORM</h1>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <div class="form-field">
+            <input type ="text" name="name" required placeholder="enter your name">
+         </div>
+        <div class="form-field">
+            <input type ="form-field:" name="phone_number" placeholder="enter your mobile number">
+        </div>
+         <div class="form-field">
+            <input type ="email" name="email" placeholder="enter your email">
+         </div>
+         <div class="form-field">
+            <input type="passward" name="passward" required placeholder="passward">
+         </div>
+         <div>
+            <button class="form-button">SUBMIT</button>
+         </div>
+        <p>
+            Already have an account
+            <a href="login.html">Login</a>
+        </p>
+    </form>
+</body>
+</html>
